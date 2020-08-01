@@ -2,138 +2,136 @@
 <html>
 
 <style>
+    body {
+        margin: 0;
+    }
 
-body {
-    margin: 0;
-}
+    #main {
+        background: rgb(245, 243, 218);
+    }
 
-#main {
-    background: rgb(245, 243, 218);
-}
+    #title {
+        font-size: 30px;
+        font-family: 'Courier new', Courier, monospace;
+        font-weight: normal;
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+        padding: 20px 0px 0px 0px;
+    }
 
-#title {
-  font-size: 30px;  
-  font-family: 'Courier new', Courier, monospace;
-  font-weight: normal;
-  text-align: center;
-  margin: 0px 0px 30px 0px;
-  padding: 20px 0px 0px 0px;
-}
+    .level-2-title {
+        font-size: 22px;
+        font-family: 'Courier new', Courier, monospace;
+        font-weight: normal;
+        margin: 0px 0px 20px 0px;
+    }
 
-.level-2-title {
-    font-size: 22px;
-    font-family: 'Courier new', Courier, monospace;
-    font-weight: normal;
-    margin: 0px 0px 20px 0px;
-}
+    .level-3-title {
+        font-size: 18px;
+        font-family: 'Courier new', Courier, monospace;
+        font-weight: normal;
+        margin: 0px 0px 10px 0px;
+    }
 
-.level-3-title {
-    font-size: 18px;
-    font-family: 'Courier new', Courier, monospace;
-    font-weight: normal;
-    margin: 0px 0px 10px 0px;
-}
+    article {
+        margin: 0px 15vw 40px 15vw;
+    }
 
-article {
-    margin: 0px 15vw 40px 15vw;
-}
+    #img-div {
+        margin: 16px 40px 30px 16px;
+        text-align: center;
+    }
 
-#img-div {
-    margin: 16px 40px 30px 16px;
-    text-align: center;
-}
+    #image {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+        border-radius: 10px;
+    }
 
-#image {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: auto;
-  border-radius: 10px;
-}
+    #img-caption {
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Courier new', Courier, monospace;
+    }
 
-#img-caption {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'Courier new', Courier, monospace;
-}
+    #tribute-info {
+        font-family: 'Courier new', Courier, monospace;
+        margin: 0px 0px 20px 0px;
+    }
 
-#tribute-info {
-  font-family: 'Courier new', Courier, monospace;
-  margin: 0px 0px 20px 0px;
-}
+    em {
+        font-style: italic;
+    }
 
-em {
-    font-style: italic;
-}
+    .tribute-info-2 {
+        font-family: 'Courier new', Courier, monospace;
+        margin: 0px 0px 20px 0px;
+    }
 
-.tribute-info-2 {
-  font-family: 'Courier new', Courier, monospace;
-  margin: 0px 0px 20px 0px;
-}
+    #paragraph-figure-military {
+        float: left;
+        width: 142px;
+        margin: 0px 15px 10px 5px;
+    }
 
-#paragraph-figure-military {
-  float: left;
-  width: 142px;
-  margin: 0px 15px 10px 5px;
-}
+    #paragraph-figure-fish {
+        float: right;
+        width: 40%;
+        min-width: 200px;
+        margin: 0px 5px 10px 15px;
+    }
 
-#paragraph-figure-fish {
-  float: right;
-  width: 40%;
-  min-width: 200px;
-  margin: 0px 5px 10px 15px;
-}
+    #paragraph-figure-safari {
+        float: left;
+        width: 30%;
+        min-width: 200px;
+        margin: 0px 15px 10px 5px;
+    }
 
-#paragraph-figure-safari {
-  float: left;
-  width: 30%;
-  min-width: 200px;
-  margin: 0px 15px 10px 5px;
-}
+    #paragraph-image-military {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: 0;
+        border-radius: 10px;
+    }
 
-#paragraph-image-military {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: 0;
-  border-radius: 10px;
-}
+    .paragraph-image {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: auto;
+        border-radius: 10px;
+    }
 
-.paragraph-image {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: auto;
-  border-radius: 10px;
-}
+    .tribute-lists {
+        font-family: 'Courier new', Courier, monospace;
+        margin: 0px 0px 20px 0px;
+    }
 
-.tribute-lists {
-  font-family: 'Courier new', Courier, monospace;
-  margin: 0px 0px 20px 0px;
-}
+    #list-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-#list-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    #tribute-link {
+        font-family: 'Courier new', Courier, monospace;
+    }
 
-#tribute-link {
-    font-family: 'Courier new', Courier, monospace;
-}
+    #tribute-more-info {
+        font-family: 'Courier new', Courier, monospace;
+        text-align: center;
+        margin: 0px 0px 10px 0px
+    }
 
-#tribute-more-info {
-    font-family: 'Courier new', Courier, monospace;
-    text-align: center;
-    margin: 0px 0px 10px 0px
-}
-
-#credit-link {
-    font-family: 'Courier new', Courier, monospace;
-    text-align: center;
-    margin: 30px 0px 40px 0px
-}
-
+    #credit-link {
+        font-family: 'Courier new', Courier, monospace;
+        text-align: center;
+        margin: 30px 0px 40px 0px
+    }
 </style>
 
 
@@ -141,37 +139,77 @@ em {
     <header>
         <h1 id="title">Ernest Hemingway</h1>
     </header>
-    
+
     <figure id="img-div">
-        <img  id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/384px-ErnestHemingway.jpg" alt="A black-and-white photograph Ernest Hemingway typing at a typewriter">
+        <img id="image"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/384px-ErnestHemingway.jpg"
+            alt="A black-and-white photograph Ernest Hemingway typing at a typewriter">
         <fig-caption id="img-caption">Hemingway at a typewriter</fig-caption>
     </figure>
-    
+
     <article>
         <h2 class="level-2-title">Hemingway's Life</h2>
-        <p id="tribute-info">Ernest Hemingway was an American journalist and writer, who won the Nobel Prize in Literature in 1954 for his 1952 novel <em>The Old Man and the Sea</em>. His distinctive writing style had a strong influence on 20th-century fiction and many of his works are considered classics of American literature.
-            <figure id="paragraph-figure-military">
-                <img id="paragraph-image-military" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ernest_Hemingway_in_Milan_1918_retouched_3.jpg/142px-Ernest_Hemingway_in_Milan_1918_retouched_3.jpg" alt="Hemingway in military uniform">
-            </figure>
+        <p id="tribute-info">Ernest Hemingway was an American journalist and writer, who won the Nobel Prize in
+            Literature in 1954 for his 1952 novel <em>The Old Man and the Sea</em>. His distinctive writing style had a
+            strong influence on 20th-century fiction and many of his works are considered classics of American
+            literature.
+        <figure id="paragraph-figure-military">
+            <img id="paragraph-image-military"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Ernest_Hemingway_in_Milan_1918_retouched_3.jpg/142px-Ernest_Hemingway_in_Milan_1918_retouched_3.jpg"
+                alt="Hemingway in military uniform">
+        </figure>
         </p>
-        <p class="tribute-info-2">He was born on 21 July 1899 in Oak Park, Illinois. He took a job as a journalist for The Kansas City Star and then volunteered as a driver for the Red Cross in Italy during the First World War. Stationed on the Austrian front, he was seriously wounded by mortar fire, but continued to evacuate Italian soldiers to safety, later being awarded the Italian Silver Medal of Bravery for this action.
+        <p class="tribute-info-2">He was born on 21 July 1899 in Oak Park, Illinois. He took a job as a journalist for
+            The Kansas City Star and then volunteered as a driver for the Red Cross in Italy during the First World War.
+            Stationed on the Austrian front, he was seriously wounded by mortar fire, but continued to evacuate Italian
+            soldiers to safety, later being awarded the Italian Silver Medal of Bravery for this action.
         </p>
-        <p class="tribute-info-2">After the war, Hemingway moved back to America for a short period, and married Hadley Richardson before moving to Paris, and working as a foreign correspondent for the Toronto Star. In Paris, Hemingway met many influential writers and artists such as Gertrude Stein, Ezra Pound, James Joyce, Picasso and Joan Miro, and published his first books of poems and short stories <em>Three Stories and Ten Poems</em>. His first novel, <em>The Sun Also Rises</em> which is often recognised as his best work, was published in 1926. It draws on his experience of the bullfighting festival of San Fermin in Spain, which he attended with a group of American and British expatriates.
-            <figure id="paragraph-figure-fish">
-                <img class="paragraph-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Hemingway_and_Marlins.jpg/581px-Hemingway_and_Marlins.jpg" alt="Hemingway fishing">
-            </figure>
+        <p class="tribute-info-2">After the war, Hemingway moved back to America for a short period, and married Hadley
+            Richardson before moving to Paris, and working as a foreign correspondent for the Toronto Star. In Paris,
+            Hemingway met many influential writers and artists such as Gertrude Stein, Ezra Pound, James Joyce, Picasso
+            and Joan Miro, and published his first books of poems and short stories <em>Three Stories and Ten
+                Poems</em>. His first novel, <em>The Sun Also Rises</em> which is often recognised as his best work, was
+            published in 1926. It draws on his experience of the bullfighting festival of San Fermin in Spain, which he
+            attended with a group of American and British expatriates.
+        <figure id="paragraph-figure-fish">
+            <img class="paragraph-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Hemingway_and_Marlins.jpg/581px-Hemingway_and_Marlins.jpg"
+                alt="Hemingway fishing">
+        </figure>
         </p>
-        <p class="tribute-info-2">In 1927, Hemingway divorced Richardson and married Pauline Pfeiffer, and in 1928, they moved back to America, settling in Key West, Florida. From there, he wrote <em>A Farewell To Arms</em> which was published in 1929. He undertook many fishing trips in the Caribbean, and hunting expeditions to Wyoming and Kenya, and published further books, <em>The Green Hills of Africa</em> and <em>To Have and Have Not</em>.</p>
-        <p class="tribute-info-2">Hemingway travelled to Spain in 1937 to report on the Civil War. On his return he divorced Pfeiffer and married Martha Gelhorn, moving to Cuba and renting a farm, Finca Vigia just outside of Havana, where he wrote <em>For Whom the Bell Tolls</em>.</p>
-        <p class="tribute-info-2">From 1944 to 1945 Hemingway was in Europe, covering the war, and was present at the Normandy landings and liberation of Paris. He was awarded the Bronze Star for bravery. Hemingway divorced Gelhorn and after the war married Mary Welsh, moving back to Cuba. In 1945, he was involved in a car accident, sustaining a broken knee and head injuries, and started to suffer from various health issues. He wrote <em>Across the River and Into the Trees</em> in 1950 and <em>The Old Man and the Sea</em> in 1952, the latter winning him the Pulitzer Prize and then the Nobel Prize for Literature.
-            <figure id="paragraph-figure-safari">
-                <img class="paragraph-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ernest_and_Mary_Hemingway_on_safari%2C_1953-54.jpg/485px-Ernest_and_Mary_Hemingway_on_safari%2C_1953-54.jpg" alt="Hemingway on safari in Africa">
-            </figure>
+        <p class="tribute-info-2">In 1927, Hemingway divorced Richardson and married Pauline Pfeiffer, and in 1928, they
+            moved back to America, settling in Key West, Florida. From there, he wrote <em>A Farewell To Arms</em> which
+            was published in 1929. He undertook many fishing trips in the Caribbean, and hunting expeditions to Wyoming
+            and Kenya, and published further books, <em>The Green Hills of Africa</em> and <em>To Have and Have
+                Not</em>.</p>
+        <p class="tribute-info-2">Hemingway travelled to Spain in 1937 to report on the Civil War. On his return he
+            divorced Pfeiffer and married Martha Gelhorn, moving to Cuba and renting a farm, Finca Vigia just outside of
+            Havana, where he wrote <em>For Whom the Bell Tolls</em>.</p>
+        <p class="tribute-info-2">From 1944 to 1945 Hemingway was in Europe, covering the war, and was present at the
+            Normandy landings and liberation of Paris. He was awarded the Bronze Star for bravery. Hemingway divorced
+            Gelhorn and after the war married Mary Welsh, moving back to Cuba. In 1945, he was involved in a car
+            accident, sustaining a broken knee and head injuries, and started to suffer from various health issues. He
+            wrote <em>Across the River and Into the Trees</em> in 1950 and <em>The Old Man and the Sea</em> in 1952, the
+            latter winning him the Pulitzer Prize and then the Nobel Prize for Literature.
+        <figure id="paragraph-figure-safari">
+            <img class="paragraph-image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ernest_and_Mary_Hemingway_on_safari%2C_1953-54.jpg/485px-Ernest_and_Mary_Hemingway_on_safari%2C_1953-54.jpg"
+                alt="Hemingway on safari in Africa">
+        </figure>
         </p>
-        <p class="tribute-info-2">While on safari in East Africa in 1954, Hemingway was in a serious aircraft accident, sustaining serious head injuries. The next day, while being flown out to Entebbe in Uganda for medical treatment, the plane he was traveling in exploded on take-off, leaving him with further injuries and severe burns. His health deteriorated as a result and he became a heavy drinker.</p>
-        <p class="tribute-info-2">In 1956, he returned to Europe and on discovering a cache of his old manuscripts at the Ritz, wrote <em>A Moveable Feast</em>, about his time in Paris in the 20s, and worked on <em>The Garden of Eden</em>, <em>Islands in the Stream</em> and <em>True at First Light</em>, all of which were published posthumously.</p>
-        <p class="tribute-info-2">After the Invasion of the Bay of Pigs in 1961, Hemingway had to leave Cuba for good after his home was seized by the Castro government. He moved to Ketchum, Idaho, where he had bought a property some years earlier.</p>
-        <p class="tribute-info-2">His physical and mental health deteriorated rapidly in 1961, and he ended his own life on 2 July 1961.</p>
+        <p class="tribute-info-2">While on safari in East Africa in 1954, Hemingway was in a serious aircraft accident,
+            sustaining serious head injuries. The next day, while being flown out to Entebbe in Uganda for medical
+            treatment, the plane he was traveling in exploded on take-off, leaving him with further injuries and severe
+            burns. His health deteriorated as a result and he became a heavy drinker.</p>
+        <p class="tribute-info-2">In 1956, he returned to Europe and on discovering a cache of his old manuscripts at
+            the Ritz, wrote <em>A Moveable Feast</em>, about his time in Paris in the 20s, and worked on <em>The Garden
+                of Eden</em>, <em>Islands in the Stream</em> and <em>True at First Light</em>, all of which were
+            published posthumously.</p>
+        <p class="tribute-info-2">After the Invasion of the Bay of Pigs in 1961, Hemingway had to leave Cuba for good
+            after his home was seized by the Castro government. He moved to Ketchum, Idaho, where he had bought a
+            property some years earlier.</p>
+        <p class="tribute-info-2">His physical and mental health deteriorated rapidly in 1961, and he ended his own life
+            on 2 July 1961.</p>
     </article>
 
     <article>
@@ -199,52 +237,55 @@ em {
             <div>
                 <h3 class="level-3-title">Nonfiction</h3>
                 <ul class="tribute-lists">
-                        <li>Indian Camp (1926)</li>
-                        <li>Death in the Afternoon (1932)</li>
-                        <li>Green Hills of Africa (1935)</li>
-                        <li>Hemingway, The Wild Years (1962)</li>
-                        <li>A Moveable Feast (1964)</li>
-                        <li>By-Line: Ernest Hemingway (1967)</li>
-                        <li>Ernest Hemingway: Cub Reporter (1970)</li>
-                        <li>The Dangerous Summer (1985)</li>
-                        <li>Dateline: Toronto (1985)</li>
-                        <li>Under Kilimanjaro (2005)</li>
+                    <li>Indian Camp (1926)</li>
+                    <li>Death in the Afternoon (1932)</li>
+                    <li>Green Hills of Africa (1935)</li>
+                    <li>Hemingway, The Wild Years (1962)</li>
+                    <li>A Moveable Feast (1964)</li>
+                    <li>By-Line: Ernest Hemingway (1967)</li>
+                    <li>Ernest Hemingway: Cub Reporter (1970)</li>
+                    <li>The Dangerous Summer (1985)</li>
+                    <li>Dateline: Toronto (1985)</li>
+                    <li>Under Kilimanjaro (2005)</li>
                 </ul>
             </div>
 
             <div>
-                    <h3 class="level-3-title">Collection of stories</h3>
-                    <ul class="tribute-lists">
-                        <li>Three Stories and Ten Poems (1923)</li>
-                        <li>In Our Time (1924)</li>
-                        <li>Men Without Women (1927)</li>
-                        <li>Winner Take Nothing (1933)</li>
-                        <li>The Fifth Column and the First Forty-Nine Stories (1938)</li>
-                        <li>The Essential Hemingway (1947)</li>
-                        <li>The Snows of Kilimanjaro and Other Stories (1961)</li>
-                        <li>The Fifth Column and Four Stories of the Spanish Civil War(1969)</li>
-                        <li>The Nick Adams Stories(1972)</li>
-                        <li>88 Poems (1979)</li>
-                        <li>Complete Poems (1979)</li>
-                        <li>The Short Stories of Ernest Hemingway(1984)</li>
-                        <li>The Complete Short Stories of Ernest Hemingway (1987)</li>
-                        <li>The Collected Stories (1995)</li>
-                        <li>Hemingway on Writing (1999)</li>
-                        <li>Hemingway on Fishing (2000)</li>
-                        <li>Hemingway on Hunting (2003)</li>
-                        <li>Hemingway on War (2003)</li>
-                        <li>Hemingway on Paris (2008)</li>
-                    </ul>
-                </div>
+                <h3 class="level-3-title">Collection of stories</h3>
+                <ul class="tribute-lists">
+                    <li>Three Stories and Ten Poems (1923)</li>
+                    <li>In Our Time (1924)</li>
+                    <li>Men Without Women (1927)</li>
+                    <li>Winner Take Nothing (1933)</li>
+                    <li>The Fifth Column and the First Forty-Nine Stories (1938)</li>
+                    <li>The Essential Hemingway (1947)</li>
+                    <li>The Snows of Kilimanjaro and Other Stories (1961)</li>
+                    <li>The Fifth Column and Four Stories of the Spanish Civil War(1969)</li>
+                    <li>The Nick Adams Stories(1972)</li>
+                    <li>88 Poems (1979)</li>
+                    <li>Complete Poems (1979)</li>
+                    <li>The Short Stories of Ernest Hemingway(1984)</li>
+                    <li>The Complete Short Stories of Ernest Hemingway (1987)</li>
+                    <li>The Collected Stories (1995)</li>
+                    <li>Hemingway on Writing (1999)</li>
+                    <li>Hemingway on Fishing (2000)</li>
+                    <li>Hemingway on Hunting (2003)</li>
+                    <li>Hemingway on War (2003)</li>
+                    <li>Hemingway on Paris (2008)</li>
+                </ul>
             </div>
+        </div>
         </div>
     </article>
 
     <footer>
-        <p id="tribute-more-info">Click here for <a accesskey="a" id="tribute-link" href="https://en.wikipedia.org/wiki/Ernest_Hemingway" target="_blank">more information about Hemingway</a>.
+        <p id="tribute-more-info">Click here for <a accesskey="a" id="tribute-link"
+                href="https://en.wikipedia.org/wiki/Ernest_Hemingway" target="_blank">more information about
+                Hemingway</a>.
         </p>
-        <p id="credit-link">Credit: All images and information is sourced from <a accesskey="b" href="https://www.wikipedia.org/" target="blank">Wikipedia</a>.</p>
+        <p id="credit-link">Credit: All images and information is sourced from <a accesskey="b"
+                href="https://www.wikipedia.org/" target="blank">Wikipedia</a>.</p>
     </footer>
-  </main>
+</main>
 
-  </html>
+</html>
